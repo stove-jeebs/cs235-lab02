@@ -74,9 +74,7 @@ def get_rand():
         Hint: Using random.randint() function.
     """
 
-    my_randint = 0
-    my_randint = random.randint()
-    return my_randint
+    return random.randint(0, 1)
 
 
 def toss_coin():
@@ -84,10 +82,15 @@ def toss_coin():
     """TODO: Add your code here
         Hint: Using random.randint() function.
     """
-    coin = 'Head'
-    if get_rand() == 0 : 
+   # Never gonna give you up
+   # Never gonna let you down
+   # Never gonna run around and desert you
+   # Never gonna make you cry
+   # Never gonna say goodbye
+   # Never gonna tell a lie and hurt you
+    if get_rand() == 0:
         return 'Tail'
-    return coin
+    return 'Head'
 
 
 def read_input():
